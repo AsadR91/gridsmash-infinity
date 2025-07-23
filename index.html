@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridSmash Infinity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>GridSmash Infinity</h1>
+            <div class="stats-container">
+                <div class="score-container">
+                    Score: <span id="score">0</span>
+                </div>
+                <div class="level-container">
+                    Level: <span id="level">1</span>
+                </div>
+                <div class="next-level">
+                    Next Level: <span id="nextLevelScore">1000</span>
+                </div>
+            </div>
+        </header>
+        
+        <div class="game-area">
+            <div class="grid-container" id="gameGrid"></div>
+            <div class="pieces-container">
+                <h2>Available Pieces</h2>
+                <div id="piecesArea"></div>
+            </div>
+        </div>
+
+        <div id="gameOver" class="game-over hidden">
+            <h2>Game Over!</h2>
+            <p>Final Score: <span id="finalScore">0</span></p>
+            <button id="restartButton">Play Again</button>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html> 
